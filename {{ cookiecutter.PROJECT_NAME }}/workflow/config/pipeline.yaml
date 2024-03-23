@@ -1,0 +1,69 @@
+project_name: {{ cookiecutter.PROJECT_NAME }}
+description: {{ cookiecutter.PROJECT_DESCRIPTION }}
+owner: {{ cookiecutter.OWNER }}
+date_created: {{ cookiecutter.DATE }}
+
+################################################################################
+# Configure Data URLs
+################################################################################
+# General Format is some nested structure of information with a description and url:
+# __item__:
+#   description:
+#   url:
+
+metadata:
+  sampleAnnotation: 
+    description: File used to identify/map samples from source data to the samples used in the analysis
+    url: TODO::(add url)
+  treatmentAnnotation: 
+    description: File used to identify/map treatment conditions from source data to the treatment conditions used in the analysis
+    url: TODO::(add url)
+  referenceGenome: #
+    description: OPTIONAL
+    source: GENCODE or ENSEMBL
+    species: TODO::(add species, i.e 'homo sapiens')
+    release: TODO::(add release, i.e 45 for GENCODE)
+    build: GRCh37 or GRCh38
+    url: OPTIONAL(if using a specific link in analysis)
+
+# Minimum fields for each data type: description, url, tool(s) name & version
+# optional fields: date accessed, DOI, Reference Genome Build & Release 
+molecularProfiles:
+  cnv:
+    __TEMPORARY__: 
+      description: TODO::(add description)
+      url: TODO::(add url)
+      __TOOL1__: 
+        name: TODO::(add tool name)
+        version: TODO::(add tool version)
+
+  rnaseq: 
+    __TEMPORARY__: 
+      description: TODO::(add description)
+      url: TODO::(add url)
+      __TOOL1__: 
+        name: TODO::(add tool name)
+        version: TODO::(add tool version)
+
+    __TEMPORARY2__: 
+      description: TODO::(add description)
+      url: TODO::(add url)
+      __TOOL1__: 
+        name: TODO::(add tool name)
+        version: TODO::(add tool version)
+
+  rna:
+    __TEMPORARY__: 
+      description: TODO::(add description)
+      url: TODO::(add url)
+      __TOOL1__: 
+        name: TODO::(add tool name)
+        version: TODO::(add tool version)
+
+  mutation:
+    __TEMPORARY__: 
+      description: TODO::(add description)
+      url: TODO::(add url)
+      __TOOL1__: 
+        name: TODO::(add tool name)
+        version: TODO::(add tool version)

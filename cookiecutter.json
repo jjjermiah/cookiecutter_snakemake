@@ -1,0 +1,18 @@
+{
+    "OWNER" : "Jermiah Joseph",
+    "PROJECT_NAME" : "TEST",
+    "EMAIL" : "Jermiah@gmail.com",
+    "DATE" : "{% now 'utc', '%Y-%m-%d' %}",
+    "PROJECT_DESCRIPTION": null,
+    "Directory_Name" : "{{ cookiecutter.PROJECT_NAME.capitalize().replace(' ', '_').replace('-', '_')}}",
+    "REFERENCE_DIR" : true,
+    "__prompts__": {
+        "OWNER": "Full Name(s) of the project owner(s)",
+        "PROJECT_NAME": "Name of the project",
+        "EMAIL": "Email of the project owner(s)",
+        "DATE": "Date: YYYY-MM-DD",
+        "PROJECT_DESCRIPTION": "Short description of the project, its purpose and its goals",
+        "Directory_Name": "Name of the directory to create for the project",
+        "REFERENCE_DIR": "Do you want to include a symlink to the PSET reference directory? (True/False)"
+    }
+  }

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# this is a shell script for quick testing of the cookiecutter
+
+
+# Set variables
+SOURCE_DIR=$(basename $PWD) 
+ZIP=cookiecutter.zip  
+
+# remove the "TEST" directory if it exists
+if [ -d "TEST" ]; then rm -rf TEST; fi  # Remove TEST directory if it exists
+if [ -d $ZIP ]; then rm $ZIP; fi  # Remove ZIP if it exists
+
+# Set parent directory as working directory
+pushd .. # pushd is like cd but it remembers the current directory in a stack
+
+# ZIP cookiecutter
+zip -r $ZIP $SOURCE_DIR --exclude $SOURCE_DIR/$ZIP --quiet 
+
+# Move ZIP to original directory
+mv $ZIP $SOURCE_DIR/$ZIP 
+
+# Restore original work directory
+popd # popd is like cd but it goes back to the last directory in the stack
+
+echo "Cookiecutter full path:"
+echo $PWD/$ZIP
