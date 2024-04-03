@@ -1,6 +1,6 @@
 {
     "OWNER" : "Jermiah Joseph",
-    "PROJECT_NAME" : "TEST",
+    "PROJECT_NAME" : "My Test Project",
     "EMAIL" : "Jermiah@gmail.com",
     "DATE" : "{% now 'utc', '%Y-%m-%d' %}",
     "PROJECT_DESCRIPTION": null,
