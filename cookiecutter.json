@@ -1,7 +1,7 @@
 {
-    "OWNER" : "Jermiah Joseph",
+    "OWNER" : "FirstName LastName",
     "PROJECT_NAME" : "My Test Project",
-    "EMAIL" : "Jermiah@gmail.com",
+    "EMAIL" : "some_email@email.com",
     "DATE" : "{% now 'utc', '%Y-%m-%d' %}",
     "PROJECT_DESCRIPTION": null,
     "Directory_Name" : "{{ cookiecutter.PROJECT_NAME.capitalize().replace(' ', '_').replace('-', '_')}}",
