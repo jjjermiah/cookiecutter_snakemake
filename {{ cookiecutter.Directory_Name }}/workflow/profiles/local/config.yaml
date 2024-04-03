@@ -1,0 +1,6 @@
+show-failed-logs: True
+keep-going: True
+rerun-incomplete: True
+printshellcmds: True
+use-conda: True
+use-singularity: True
